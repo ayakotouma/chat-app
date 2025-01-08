@@ -11,58 +11,9 @@
   <% current_user.rooms.each do |room| %>
     <div class="room">
       <div class="room-name">
-        <a href="#"><%= room.name %></a>
+        <%= link_to room.name, room_messages_path(room) %>
       </div>
     </div>
   <% end %>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom1</a>
-    </div>
-  </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom2</a>
-    </div>
-  </div>
-<div class="room">
-    <div class="room-name">
-      <a href="#">techroom3</a>
-    </div>
-  </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom4</a>
-    </div>
-  </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom5</a>
-    </div>
-  </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom6</a>
-    </div>
-  </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom7</a>
-    </div>
-  </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom8</a>
-    </div>
-  </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom9</a>
-    </div>
-  </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom10</a>
-    </div>
-  </div>
+  
   </div>
